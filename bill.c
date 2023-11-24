@@ -2,24 +2,24 @@
 
 main(){
 	
-	double u,s,c,bill;
+	double unit,s,cost,bill;
 	
 	printf("enter unit :");
-	scanf("%lf",&u);
+	scanf("%lf",&unit);
 	
-	if(u<=50){
-		s=u*0.50;
-	}else if(u<=150){
-		s=(u-50)*0.75+25;
-	}else if(u<=250){
-		s=(u-150)*1.25+100;
+	if(unit<=50){
+		s=unit*0.50;
+	}else if(unit<=150){
+		s=(unit-50)*0.75+25;
+	}else if(unit<=250){
+		s=(unit-150)*1.25+100;
 	}else {
-		s=(u-250)*1.50+225;
+		s=(unit-250)*1.50+225;
 	}
 	printf("total = %.2lf\n",s);
 	
-	c=s*20/100;
-	bill=s+c;
+	cost=s*20/100;
+	bill=s+cost;
 	
 	printf("bill = %.2lf\n",bill);
 }
